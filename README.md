@@ -62,7 +62,7 @@ for instructions and the project rubric.
 
 ## Project output Video
 
-[![PID Controller video](./Capture.PNG)](https://www.youtube.com/watch?v=t9_DCZcR3WE"PID Controller Clip for  - Click to Watch!")
+[![PID Controller video](Capture.PNG)](https://www.youtube.com/watch?v=t9_DCZcR3WE "PID Controller Clip for  - Click to Watch!")
 
 
 ## Hints!
