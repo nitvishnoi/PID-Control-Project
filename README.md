@@ -1,7 +1,24 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
----
+## Project Basics and Summary of work
+In this project i used a Proportional-Integral-Derivative Controller, or PID for short, the purpose of this project was to build a PID controller and tune the PID hyperparameters by applying the general processing flow as described in the lessons," and to "test our solution on the simulator. The project involves implementing the controller primarily for the steering angle of the car (although I used the value from this controller to also determine throttle), as well as tuning coefficients for each PID value in order to calculate a steering angle that keeps the car on the track.
+The simulator provides cross-track error (CTE), speed, and steering angle data via local websocket. The PID (proportional/integral/differential) controller must respond with steering and throttle commands to drive the car reliably around the simulator track.
+
+Project Steps
+Implement PID Controller for Steering (optional: controlling throttle as well)
+Optimize init parameters for each PID coefficient
+
+I used one PID controller for steering and another for throttle. The PID gains were tuned automatically while the car drove around the track using the twiddle method.
+PID stands for proportional, integral, and derivative:
+
+Proportional - As the name implies, this controller’s response is proportional to the current error.
+
+Integral - This controller counters continuous error, such as steering bias, by accumulating it over time.
+
+Derivative - This controller tries to predict and counter future error based on its current rate of change, therefore it will dampen the response of the proportional controller.
+
+The final values were determined by manual tuning. The ratio of the coefficients to each other that I chose (0.2, 0.004, 3.0) seemed to work well, and I also tried lowering & raising them in conjunction with each other as well as tuning each individually.
 
 ## Dependencies
 
