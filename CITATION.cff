@@ -1,19 +1,41 @@
 cff-version: 1.2.0
-message: "PID-Control-Project for Autonomous driving"
-title: "PID-Control-Project"
+message: "If you use this software, please cite it as below."
+title: "PID Control for Autonomous Vehicle Steering"
+type: software
 version: 1.0.0
-doi: 10.5281/zenodo.1234567   # optional if linked to Zenodo
-date-released: 2025-10-25
+doi: 10.5281/zenodo.REPLACE_WITH_CONCEPT_DOI
+date-released: REPLACE_WITH_RELEASE_DATE
 authors:
   - family-names: Vishnoi
     given-names: Nitin
-    affiliation: ""
     orcid: "https://orcid.org/0009-0000-5871-9307"
-repository-code: "https://github.com/nitvishnoi/PID-Control-Project/"
-keywords:
-  - AI
-  - Embedded Systems
-  - Autonomous Driving
-  - PID Control
+repository-code: "https://github.com/nitvishnoi/PID-Control-Project"
 license: MIT
-abstract: "This repository contains the source code and datasets for [PID-Control-Project]."
+keywords:
+  - PID control
+  - closed-loop control
+  - cross-track error
+  - steering control
+  - autonomous vehicles
+  - controller tuning
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.REPLACE_WITH_CONCEPT_DOI
+    description: "Concept DOI - always resolves to the latest version"
+  - type: doi
+    value: 10.5281/zenodo.REPLACE_WITH_VERSION_DOI
+    description: "DOI for version 1.0.0"
+abstract: >-
+  Proportional-Integral-Derivative controller for steering and throttle control
+  of a simulated vehicle, driven by cross-track error feedback. Built on the
+  Udacity Self-Driving Car Nanodegree project scaffold cited under references,
+  with original contributions in REPLACE THIS WITH YOUR ACTUAL ADDITIONS -
+  name the tuning method, the modifications to the control law, and any
+  evaluation you added beyond the base assignment.
+references:
+  - type: software
+    title: "CarND-PID-Control-Project"
+    authors:
+      - name: "Udacity"
+    repository-code: "https://github.com/udacity/CarND-PID-Control-Project"
+    notes: "Upstream project scaffold from which this repository is derived."
